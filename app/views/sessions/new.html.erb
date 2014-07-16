@@ -1,12 +1,8 @@
+<!-- removed demo user login stuff -->
+
 <section class="login">
 
   <h2>Log In</h2>
-
-  <div class="demo">
-  	<p><strong>Demo Account:</strong></p>
-  	<p>email: homer@sent.as</p>
-  	<p>password: 123</p>
-  </div>
 
   <form action ="/session" method="post">
     <p>
@@ -15,8 +11,7 @@
              name="email"
              id="user_email"
              placeholder="Enter your email address"
-             value="homer@sent.as"
-             />
+      />
     </p>
 
     <p>
@@ -25,11 +20,10 @@
              name="password"
              id="user_password"
              placeholder="Enter your password"
-             value="123"
-             />
+      />
     </p>
 
     <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>" />
     <input type="submit" value="Login" />
   </form>
-</div>
+</section>
