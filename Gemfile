@@ -36,3 +36,6 @@ end
 group :production do
   gem 'pg'
 end
+
+# required for auth against cloudstead
+gem 'httparty'
